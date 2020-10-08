@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+  }
+  
+  html {
+    box-sizing: border-box;
+  }
+
+  .about-section {
+    font-size: 30px;
+    padding: 50px;
+    text-align: center;
+    background-color: #474e5d;
+    color: white;
+  }
+
+  #nav-bar li {
+      float: right;
+  }
+
+  #nav-bar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  #nav-bar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  #nav-bar li a:hover:not(.active) {
+    background-color: #111;
+  }
+  
+  #nav-bar .active {
+    background-color: #4CAF50;
+  }
+
+  #contact-us {     
+      background-color: Transparent;
+      border: 2px solid black;
+      font-size: 20px;
+      padding: 15px;   
+      transition: all 0.4s ease 0s;     
+  }
+  .about-section a {
+    color: white;
+  }
+
+  .contact-us:hover {
+      color: gray;
+  }
+
+  .our-goal {
+    font-size: 30px;
+    padding: 50px;
+    text-align: center;
+    background-color: #2f3135;
+    color: white;
+  }
+
+
+  .Team {
+    font-size: 30px;
+    padding: 50px;
+    text-align: center;
+    background-color: #818386;
+    color: white;
+  }
+
+
+  .row{
+    display: block;
+    text-align: center;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.mem-card {
+  display: block;
+}
+.member{
+    margin-left: 50px;
+    display: inline-block;
+    text-align: center;
+    border: 1px solid black;
+    
+}
+.mem-head{
+    color: black;
+    font-family: cursive;
+    font-size: 18px;
+}
+.mem-img{
+    width: 250px;
+    height: 250px;
+}
