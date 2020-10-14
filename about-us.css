@@ -9,10 +9,54 @@ body {
 
   .about-section {
     font-size: 30px;
-    padding: 50px;
+    padding: 60px;
     text-align: center;
-    background-color: #474e5d;
+
     color: white;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/background.jpg');
+    
+
+    
+  }
+
+  .about-content {
+    animation: about-content;
+    animation-duration: 3s;
+    position: relative;
+  }
+
+  @keyframes about-content { 
+    0% {left: -300px;}
+    100% {left: 0px ;}
+
+  }
+
+
+  #about-head {
+    position: relative;
+    animation: about-head;
+    animation-duration: 3s;
+  }
+
+  @keyframes about-head {
+    0% {top: -60px;}
+    100% {top: 0px ;}
+  }
+
+  .white-border {
+    width: 25%;
+    border-bottom: 1px solid #d4d4d4;
+    margin: 0 auto;
+    margin-top: -35;
+    animation: white-border;
+    animation-duration: 3s;
+    position: relative;
+
+}
+  @keyframes white-border { 
+    0% {left: -150px;}
+    100% {left: 0px ;}
+
   }
 
   #nav-bar li {
@@ -45,11 +89,23 @@ body {
 
   #contact-us {     
       background-color: Transparent;
-      border: 2px solid black;
+      border: 2px solid rgb(255, 255, 255);
       font-size: 20px;
       padding: 15px;   
-      transition: all 0.4s ease 0s;     
+      /* transition: all 0.4s ease 0s;    */
+      opacity: 0;
+      animation-name: contact-us;
+      animation-duration: 3s;
+      animation-delay: 2.5s;
+      animation-fill-mode: forwards;
+
   }
+
+  @keyframes contact-us {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+  }
+
   .about-section a {
     color: white;
   }
@@ -60,16 +116,26 @@ body {
 
   .our-goal {
     font-size: 30px;
-    padding: 50px;
+    padding: 100px;
     text-align: center;
     background-color: #2f3135;
     color: white;
+    /* position: relative;
+    animation: our-goal;
+    animation-duration: 3s; */
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/our-goal.jpg');
+ 
   }
+
+  /* @keyframes our-goal {
+    0% {left: -100;}
+    100% {left: 0px;}
+  } */
 
 
   .Team {
     font-size: 30px;
-    padding: 50px;
+    padding: 10px;
     text-align: center;
     background-color: #818386;
     color: white;
@@ -87,7 +153,8 @@ body {
   display: block;
 }
 .member{
-    margin-left: 50px;
+    margin-left: 40px;
+    margin-right: 40px;
     display: inline-block;
     text-align: center;
     border: 1px solid black;
