@@ -1,21 +1,29 @@
+*{
+    padding: 0px;
+    margin: 0px;  
+}
+
+html{
+    
+    scroll-behavior: smooth;
+}
 body{
     padding: 0px;
     margin: 0px;  
     font-family: sans-serif;
-  
+   
    }   
-
 
  .container{
       width: 90%;
       margin: auto;
-      overflow: hidden;
+      overflow: hidden;  
     }
+
+
     /* contact form css */
-
-
     #contact-section{
-      background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.9)),url();
+      background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.4)),url(back.jpg);
       background-size: cover;
       background-position:center;
       height: 100%;
@@ -128,3 +136,47 @@ body{
       }
 
   }
+
+
+.icons{
+    width: 500px;
+    height: 500px;
+    background-color: transparent;
+    color: aliceblue;
+    font-size: 20px;
+    font-family: monospace;
+    padding: 0px;
+    text-align: right;
+    margin-right: 50px;
+    margin-top: 0px;
+}
+
+.form{
+     width: 500px;
+    height: 500px;
+    text-align: center;
+    margin-top: 20px
+}
+
+#FAQ{
+    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.7)),url(faq.jpg);
+    color: aliceblue;
+    font-size: 60px;
+    height: 800px;
+    text-align: center; 
+    padding: 50px;
+}
+
+#FAQ select{
+    font-size: 50px;
+    color: white;
+    background-color: transparent;
+    border-radius: 0%;
+    border: solid white 5px;
+}
+
+#FAQ option{
+    font-size: 50px;
+    color: white;
+    background-color: black; 
+}
