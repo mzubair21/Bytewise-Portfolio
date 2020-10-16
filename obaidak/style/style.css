@@ -9,11 +9,11 @@
 }
 body
 {
-    
+    background-color: #111111;
 }
 .main-header
 {
-    height: 600px;
+    height: 400px;
     background-image: url('../img/pexels-neo-2653362.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -22,7 +22,7 @@ body
 .main-header h1
 {
     color: white;
-    padding-top: 28%;
+    padding-top: 15%;
     text-align: center;
     font-size: 60px;
 }
@@ -187,3 +187,52 @@ label #cancel
     left: 210px;
     
 }
+/*-----------------------about--------------------------------*/
+.about
+{
+    text-align: center;
+    color: white;
+    margin-top: 100px;
+    height: 600px;
+}
+.wh-heading
+{
+    padding: 50px;
+}
+.about h1
+{
+    padding-top: 50px;
+}
+.about-pic
+{
+ 
+    width: 50%;
+    height: 600px;
+    display: block;
+    float: left;
+    padding: 50px;
+}
+.about-pic img
+{
+    height: 100%;
+    width: auto;
+}
+.about-text
+{
+    width: 50%;
+    height: 600px;
+    display: block;
+    float: left;
+    padding: 50px;
+    text-align: left;
+}
+.about-text h1
+{
+    font-size: 50px;
+}
+.about-text p
+{
+    padding-top: 40px;
+    line-height: 30px;
+}
+/*-----------------------/about--------------------------------*/
