@@ -9,14 +9,25 @@
 }
 body
 {
-    background-image: url('../img/blue-red-and-black-abstract-painting-2130475.jpg');
+    
+}
+.main-header
+{
+    height: 600px;
+    background-image: url('../img/pexels-neo-2653362.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: 100% 100%;
+    background-size: 100%;
+}
+.main-header h1
+{
+    color: white;
+    padding-top: 28%;
+    text-align: center;
+    font-size: 60px;
 }
 nav
 {
-    padding: 20px;
     background-color: white;
     
     
@@ -93,7 +104,7 @@ img
     left: -250px;
     width: 250px;
     height: 100%;
-    background: #042331;
+    background: #333333;
     transition: all 0.5s ease;
 }
 .sidebar header
@@ -102,9 +113,10 @@ img
     color: white;
     text-align: center;
     line-height: 60px;
-    background: #061720;
+    background: #202020;
     user-select: none;
 }
+
 ul
 {
     margin-top: 20px;
@@ -141,8 +153,8 @@ label #btn,label #cancel
 }
 label #btn
 {
-    left: 20px;
-    top: 130px;
+    left: 5px;
+    top: 1px;
     font-size: 35px;
     color: white;
     padding: 6px 12px;
@@ -153,11 +165,11 @@ label #cancel
 {
     z-index: 1111;
     left: -195px;
-    top: 117px;
+    top: 57px;
     font-size: 30px;
     color: white;
     padding: 4px 9px;
-    transition: 0.45s ease;
+    transition: 0.46s ease;
 }
 #check:checked ~ .sidebar
 {
