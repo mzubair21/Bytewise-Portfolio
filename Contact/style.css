@@ -180,3 +180,110 @@ body{
     color: white;
     background-color: black; 
 }
+
+
+
+
+
+.SC
+{
+    height: 90vh;
+    position:relative;
+    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.7)),url(faq.jpg);
+}
+
+
+
+.left{
+            color: whitesmoke;
+            width: 1000px;
+            height: 450px;
+            float: left;
+            border: solid black 3px;
+            margin-left: 200px;
+            margin-top: 200px;
+        }
+        
+.right{
+            color: whitesmoke;
+            width: 1000px;
+            height: 450px;
+            float: left;
+            border: solid black 3px;
+             margin-left: 10px;
+            margin-top: 200px;
+        }
+        
+        
+body{
+            background-image: url('bac.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            padding: 0px;
+            margin: 0px;  
+            font-family: sans-serif;
+            
+        }
+
+
+h1{
+            color: aliceblue;
+            margin-left: 300px;
+        }
+
+.SC h2{
+    margin-top: 0px;
+    font-family:sans-serif;
+    font-size: 25px;
+    padding: 2px;
+    text-align: center;
+    
+}
+    
+.SC div{
+            position: relative;
+            max-width: 400px;
+            height: 600px;
+            padding: 30px;
+            background: rgba(0,0,0,.5);
+            box-shadow: 0 5px 15px rgba(0,0,0,.5);
+            text-align: center;
+            
+        }
+
+.SC input{
+    padding: 5px;
+    background-color: transparent;
+    color:white;
+    margin-left: 15px;
+   
+}
+
+
+.SC .login{
+    width: 170px;
+    background-color: deeppink;
+}
+
+
+.SC .signup{
+    width: 170px;
+    background-color: deeppink;
+}
+
+.SC ::placeholder{
+    color:white;    
+    opacity:0.7;
+}
+
+.SC .lin{
+    color: white;
+    opacity:0.8;
+}
+
+
+
+
+
+
