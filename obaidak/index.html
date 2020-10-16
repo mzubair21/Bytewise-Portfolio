@@ -5,17 +5,52 @@
         <link rel="stylesheet" type="text/css" href="style/style.css">
         <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
         <script src="https://kit.fontawesome.com/387a37172e.js" crossorigin="anonymous"></script>
+        <style>
+        
+        
+        #nav-bar-left li {
+      float: right;
+  }
+
+  #nav-bar-left ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  #nav-bar-left li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  #nav-bar-left li a:hover:not(.active) 
+        {
+        background-color: #111;
+        }
+  
+  #nav-bar-left .active {
+    background-color: #4CAF50;
+  }
+        
+        </style>
     </head>
     <body>
-        <nav>
-            <img src="img/black.png" alt="BYTEWISE logo">
-        <div class="search-bar">
-        <input class="search-txt" type="text" name="" placeholder="Search">
-            <a class="search-button" href="">
-                <i class="fas fa-search"></i>
-            </a>
-        </div>
-        </nav>
+         <header>
+            <nav id="nav-bar-left">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#news">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    
+                  </ul>
+            </nav>
+        </header>
         
         <input type="checkbox" id="check">
             <label for="check">
@@ -36,5 +71,7 @@
             </ul>
         
         </div>
+        
+        <div class="main-header"><h1>Home Page</h1></div>
     </body>
 </html>
