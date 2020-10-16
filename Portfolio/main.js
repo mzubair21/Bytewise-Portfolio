@@ -4,17 +4,24 @@ $(document).ready(function(){
    });
     
     $(window).scroll(function(){
-       if(scrollY > 20 ){
+        if(scrollY > 750){
+           $('.navbar').removeClass('sticky');
+       }
+       else if(scrollY > 20){
            $('.navbar').addClass('sticky');
        }else{
            $('.navbar').removeClass('sticky');
        } 
+        
+        
     });
     
     $('.menu-toggler').on('click',function(){
         $(this).toggleClass('nav-active');
         $('.navbar-menu').toggleClass('nav-active');     
     });
+    
+
     
     
 });

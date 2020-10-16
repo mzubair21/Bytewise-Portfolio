@@ -4,15 +4,37 @@
     text-decoration: none;
     font-family: "Ubuntu",sens-serif;
     box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+  width: 6px;
+    background-color: transparent;
 }
 
+/* Track */
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: transparent;
+  
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+ background-color: #000000
+    
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: grey; 
+}
 .navbar{
     position: fixed;
     background-color: transparent;
     width: 100%;
     padding: 30px 0;
     top: 0;
-    z-index: 999;
+    z-index: 10;
     transition: .3s linear;
 }
 .sticky{
@@ -340,6 +362,203 @@
     }
     .fullopacity{
         opacity: 1;
+    }
+    .text-box {
+     left:100px;
+    }
+    
+}
+.active2{
+        background: white;
+        color: black;
+    }
+.vision{
+    width: 100%;
+    height: 100%;
+    
+}
+.v-text{
+ padding: 40px 0px 40px 0px;
+    display: grid;
+    justify-content: center;
+}
+.v-text h1{
+    font-size: 40px;
+    font-family:serif;
+}
+.v-text .line{
+    background: #b30000;
+    width: 100%;
+    height:1px;    
+    transform: translateX(3px);
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+.slider{
+    width: 100%;
+    height: 100vh;
+    position: relative;  
+    font-family: sans-serif;
+     overflow: hidden; 
+}
+
+.banner1,.banner2,.banner3,.banner4{
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+}
+img{
+    width:120%;
+    height:120%;
+    position: absolute;
+    animation: zoom-out 3s linear infinite;
+     left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%); 
+}
+@keyframes zoom-out{
+    100%{
+    width:100%;
+    height:100%;
+    }
+}
+.text-box{
+    width: 600px;
+    position: absolute;
+    color: #fff;
+    top:280px;
+    left:100px;
+    transform: translateY(100px);
+    animation: textup 12s linear infinite;
+}
+@keyframes textup{
+    10%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+.text-box h1{
+    margin-bottom: 40px;
+}
+.text-box p{
+    font-size:14px;
+    line-height: 18px;
+    margin-top: 80px;
+}
+.text-box span{
+    background: red;
+    height: 1px;
+    width: 0px;
+    position: absolute;
+    left:0; 
+    animation: line-span 12s linear infinite;
+}
+.banner1 .text-box,.banner1 .text-box span{
+    animation-delay: 0s;
+}
+.banner2 .text-box,.banner2 .text-box span{
+    animation-delay: 3s;
+}
+.banner3 .text-box,.banner3 .text-box span{
+    animation-delay: 6s;
+}
+.banner4 .text-box,.banner4 .text-box span{
+    animation-delay: 9s;
+}
+@keyframes line-span{
+    10%{
+       width: 400px; 
+    }
+    100%{
+        width: 50%;
+    }
+}
+
+.banner1{
+    animation: slide1 12s linear infinite;
+}
+.banner2{
+    animation: slide2 12s linear infinite;
+}
+.banner3{
+    animation: slide3 12s linear infinite;
+}
+.banner4{
+    animation: slide4 12s linear infinite;
+}
+@keyframes slide1{
+    0%{
+        visibility: visible;
+    }
+    25%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: hidden;
+    }
+    75%{
+        visibility: hidden;
+    }
+    100%{
+        visibility: visible;
+    }
+}
+@keyframes slide2{
+    0%{
+        visibility: hidden;
+    }
+    25%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: visible;
+    }
+    75%{
+        visibility: hidden;
+    }
+    100%{
+        visibility: hidden;
+    }
+}
+@keyframes slide3{
+    0%{
+        visibility: hidden;
+    }
+    25%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: hidden;
+    }
+    75%{
+        visibility: visible;
+    }
+    100%{
+        visibility: hidden;
+    }
+}
+@keyframes slide4{
+    0%{
+        visibility: hidden;
+    }
+    25%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: hidden;
+    }
+    75%{
+        visibility: hidden;
+    }
+    100%{
+        visibility: visible;
     }
 }
 
