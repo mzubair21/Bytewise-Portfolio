@@ -10,13 +10,11 @@ body {
   .about-section {
     font-size: 30px;
     padding: 60px;
+    padding-bottom: 150px;
     text-align: center;
 
     color: white;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('about-us-images/background.jpg');
-    
-
-    
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('about-us-images/background.jpg'); 
   }
 
   .about-content {
@@ -110,9 +108,7 @@ body {
   .about-section a {
     color: white;
   }
-
-  
-  
+ 
 
   .our-goal {
     font-size: 30px;
@@ -120,18 +116,30 @@ body {
     text-align: center;
     background-color: #2f3135;
     color: white;
-    /* position: relative;
+    position: relative;
     animation: our-goal;
-    animation-duration: 3s; */
+    animation-duration: 3s;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('about-us-images/cover.jpg');
  
   }
 
-  /* @keyframes our-goal {
+  @keyframes our-goal {
     0% {left: -100;}
     100% {left: 0px;}
-  } */
+  }
 
+
+  .our-goal h1 {
+    position: relative;
+    animation: goal-head;
+    animation-duration: 2s;
+  }
+
+
+  @keyframes goal-head {
+    0% {top: -60px;}
+    100% {top: 0px ;}
+  }
 
   .Team {
     font-size: 30px;

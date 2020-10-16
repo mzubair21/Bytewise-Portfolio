@@ -1,0 +1,98 @@
+#nav-bar li {
+    float: right;
+}
+
+a {
+    text-decoration: none;
+}
+
+#nav-bar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+#nav-bar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+#nav-bar li a:hover:not(.active) {
+  background-color: #111;
+}
+
+#nav-bar .active {
+  background-color: #4CAF50;
+}
+
+
+
+.front-page {
+    background-color: rgb(204, 83, 83);
+    font-size: 30px;
+    /* margin-top: -20px; */
+    padding: 50px;
+    /* width: 40%; */
+}
+
+.caption {
+    width: 45%;
+    color: white;
+}
+
+.caption h3 {
+    margin-top: -20px;
+}
+
+section {
+    margin: auto;
+    width: 90%;
+    padding-top: 10px;
+}
+
+.articles {
+    float: left;
+    width: 47%;
+    background-color: lightblue;
+    padding: 20px;
+}
+
+.book-summaries {
+    float: right;
+    width: 46%;
+    background-color: rgb(204, 130, 130);
+    padding: 20px;
+}
+
+section h2 {
+    color: rgb(43, 36, 36);
+}
+
+section a {
+    color: rgb(37, 36, 36);
+}
+
+.scroll-section {
+    width: 48%;
+    float: left;
+    padding: 50px;   
+}
+
+.scroll-section h2, .image {
+    display: inline-flex;
+}
+
+.image {
+    float: right;
+    height: 80px;    
+}
+
+.story {
+    margin-top: 50px;
+    padding-left: 50px;
+}
