@@ -22,7 +22,7 @@ body
 .main-header h1
 {
     color: white;
-    padding-top: 15%;
+    padding-top: 12%;
     text-align: center;
     font-size: 60px;
 }
@@ -97,6 +97,7 @@ img
 .sidebar
 {
     margin: 0;
+    margin-top: -47px;
     padding: 0;
     list-style: none;
     text-decoration: none;
@@ -112,7 +113,7 @@ img
     font-size: 22px;
     color: white;
     text-align: center;
-    line-height: 60px;
+    line-height: 47px;
     background: #202020;
     user-select: none;
 }
@@ -127,7 +128,7 @@ ul
     color: white;
     height: 100%;
     width: 100%;
-    line-height: 60px;
+    line-height: 80px;
     font-size: 20px;
     padding-left: 40px;
     box-sizing: border-box;
@@ -137,6 +138,7 @@ ul
 .sidebar .option  li:hover a
 {
     padding-left: 50px;
+    
 }
 .sidebar ul a i{
     margin-right: 16px;
@@ -159,17 +161,28 @@ label #btn
     color: white;
     padding: 6px 12px;
     transition: all 0.5s ease;
+    position: fixed;
     
+}
+label #btn:hover
+{
+    color: #8C6E26;
 }
 label #cancel
 {
     z-index: 1111;
     left: -195px;
-    top: 57px;
+    top: 4px;
     font-size: 30px;
     color: white;
     padding: 4px 9px;
     transition: 0.46s ease;
+    position: fixed;
+}
+label #cancel:hover
+{
+    color: #8C6E26;
+    
 }
 #check:checked ~ .sidebar
 {
@@ -187,6 +200,10 @@ label #cancel
     left: 210px;
     
 }
+/*--------------------/slide-bar---------------------------------------*/
+
+
+
 /*-----------------------about--------------------------------*/
 .about
 {
@@ -207,7 +224,7 @@ label #cancel
 {
  
     width: 50%;
-    height: 600px;
+    height: 100%;
     display: block;
     float: left;
     padding: 50px;
@@ -230,9 +247,83 @@ label #cancel
 {
     font-size: 50px;
 }
+.about-text h2
+{
+    font-size: 20px;
+    color: #8C6E26;
+}
 .about-text p
 {
     padding-top: 40px;
     line-height: 30px;
+    font-size: 15px;
 }
 /*-----------------------/about--------------------------------*/
+/*---------------------------------sign in div------------------------------*/
+.sign-in-div
+{
+    margin-top: 5600px;
+    padding: 120px;
+    color: aliceblue;
+    text-align: center;
+    border: solid 3px transparent;
+    border-radius: 30px;
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-bottom: 70px;
+    transition: 0.3s ease;
+}
+.sign-in-div:hover
+{
+    border: solid 3px #8C6E26;
+    box-shadow: 0px 0px 13px #8C6E26;
+}
+.sign-in-div h1
+{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.sign-in-div button
+{
+    margin-top: 60px;
+    border-style: none;
+    padding: 20px;
+    background-color: #111111;
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+    border: solid 2px white;
+    transition: 0.3s ease;
+    border-radius: 6px;
+}
+.sign-in-div button:hover
+{
+    background-color: #8C6E26;
+    color: #111111;
+    border: solid 2px #8C6E26;
+    box-shadow: 0px 0px 8px #8C6E26;
+}
+/*---------------------------------/sign in div------------------------------*/
+
+
+/*---------------------------------footer------------------------------*/
+footer
+{
+    background-color: #0A0A0A;
+    height: 60px;
+    color: aliceblue;
+    font-size: 30px;
+    padding-left: 50px;
+    padding-top: 15px;
+}
+footer i
+{
+    margin-right: 30px;
+    transition: 0.3s ease;
+}
+footer i:hover
+{
+    color: #8C6E26;
+}
+
+/*---------------------------------/footer------------------------------*/
