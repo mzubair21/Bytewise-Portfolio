@@ -297,79 +297,7 @@
     color:white;
 }
 
-@media screen and (max-width: 980px){
-    .navbar-menu{
-    position: fixed;
-        height: 100vh;
-        width: 100%;
-        background-color:#353b48;
-        top:0;
-        right: -100%;
-        opacity: 0;
-        max-width: 400px;
-        padding: 88px 50px;
-        transition: .3s linear;
-    }
-    .navbar-menu a{
-        display: block;
-        font-size: 30px;
-    }
-    
-    .menu-toggler{
-        transition: 1s linear;
-        display: block;
-    }
-    .sticky .navbar-menu{
-       background: #f1f1f1; 
-    }
-   .navbar-menu.nav-active{
-       opacity: 1;
-        right: 0%;
-    }
-    .menu-toggler span{
-        opacity: 1;
-    }
-    .navbar-menu.nav-active:hover{
-      background: black;
-        opacity: 0.95;
-    }
-    .sticky .navbar-menu.nav-active:hover{
-      background: white;
-        opacity: 0.95;
-    }
-    .sticky .navbar-menu.nav-active a:hover{
-      background: black;
-        color: white;
-    }
-    .navbar-menu.nav-active a{
-      opacity: 1;  
-    }
-    .navbar-menu.nav-active a:hover{
-        opacity: 1; 
-        background: white;
-        color:black;
-    }
-    
-    .menu-toggler.nav-active span:nth-child(1){
-        transform:rotateZ(-45deg);
-        top: 4px;
-    }
-    .menu-toggler.nav-active span:nth-child(2){
-        opacity: 0;
-        bottom:5px;   
-    }
-    .menu-toggler.nav-active span:nth-child(3){
-        transform:rotate(45deg);
-        bottom: 14px;
-    }
-    .fullopacity{
-        opacity: 1;
-    }
-    .text-box {
-     left:100px;
-    }
-    
-}
+
 .active2{
         background: white;
         color: black;
@@ -414,7 +342,7 @@ img{
     left: 0;
     
 }
-img{
+.ser-img img{
     width:120%;
     height:120%;
     position: absolute;
@@ -563,12 +491,11 @@ img{
         visibility: visible;
     }
 }
-.service-container::before{
+.service-container::before,.service-container::after{
 	content: "";
 	background: black;
 	width: 100%;
 	height: 5vh;
-	
 }
 .service-container{
     display: flex;
@@ -664,6 +591,155 @@ left: 0;
 	width: 100%;
     background: #b30000;   
 }
+.about-container{
+	display: flex;
+	flex-wrap: wrap;
+	padding: 20px;
+	justify-content: space-around;
+}
+.about-us-box{
+width: 39%;
+margin-top: 9vh;
+}
+.focus{
+	display: inline;
+	font-size: 18px;
+	font-weight: bold;
+	color: #787878;
+	padding: 20px 0px;
+	font-family:"Ubuntu";
+	width:auto;
+}
+.about-us-box h1{
+	margin:4vh 0px 6vh 0vh;
+	font-size:3em;
+	font-family:'Century Gothic';
+	line-height: 41px;
+	
+}
+.about-us-box p{
+	margin: 10px 0px;
+	font-family: sans-serif;
+	width: 96%;
+}
+.about-us-box button{
+	background: black;
+	color: white;
+	box-shadow: none;
+	border: 1px solid white;
+	margin: 10px 0px;
+	padding: 10px 40px;
+	
+}
+.team{
+	border-radius: 1px;
+	margin-bottom: 3vh;
+}
+.team p{
+	margin-left: 57px;
+}
+.team-slider{
+	border: 1px solid grey;
+	width: 380px;
+	height: 410px;
+	margin: 40px 9vh;
+	position: relative;
+	border-radius: 10px;
+	overflow: hidden;
+	border: none;
+}
+
+.team-slide{
+	display: flex;
+	width: 100%;
+	height: 100%;
+	transition: 1s;
+	
+}
+.team-slide img{
+position:static;
+	transition: 1s;
+	width: 100%;
+	height: 100%;
+}
+
+.intro{
+	z-index: 999;
+	color:white;
+	position: absolute;
+	text-align: center;
+	top: 55%;
+	transition: 1s;
+	background: rgba(0,0,0,0.5);
+}
+.intro h2,.intro p{
+	transition:1s;
+	padding: 10px;	
+}
+.intro h2{
+		font-weight: 400;
+	padding-bottom: 5px;
+	letter-spacing: 1px;
+}
+.intro h3{
+	font-family: 'Century Gothic';
+	letter-spacing: 1px;
+	font-weight: 200;
+	transition: 1s;
+}
+.intro p{
+	width: 100%;
+	font-size: 15px;
+	margin: 0;
+	padding: 4px 0px 10px 10px;
+	font-weight: 100;
+	font-family: monospace;
+}
+/*------------------*/
+.center{
+	background: transparent;
+}
+.center h2{
+	margin-left: -180%;	
+	
+}
+.center h3{
+	margin-left: -140%;
+}
+.center p{
+	margin-left: 100%;
+	width: 100%;
+}
+/*------------------*/
+#next,#prev{
+	position: absolute;
+	top: 43%;
+	z-index:999;
+	width: 10%;
+	height: 15%;
+	background:rgba(255,255,255,0.1);
+	transition: background 0.4s linear;
+	border: none;
+	outline: none;
+	border-radius: 10% 0% 0% 10%;
+	
+}
+#next:hover,#prev:hover{
+	background:rgba(255,255,255,0.6);
+	box-shadow: 0px 0px 10px -5px;
+	-webkit-filter:invert(100%);
+}
+#prev{
+	left: 0;
+}
+#next{
+	right: 0;
+	transform:rotateZ(180deg);
+	
+}
+
+
+
 
 .display-none{
 	opacity: 0;
@@ -684,4 +760,91 @@ left: 0;
 }
 .linear-rotate{
 	animation: 3s linear-rotate linear infinite;
+}
+
+@media screen and (max-width: 980px){
+.about-container{
+text-align: center;
+	}
+.about-us-box h2{
+		display: none;
+	}
+.about-us-box{
+width: 95%;
+margin: 0px auto 5%;
+}
+	.team p{
+		margin: 0;
+	}
+    .navbar-menu{
+    position: fixed;
+        height: 100vh;
+        width: 100%;
+        background-color:#353b48;
+        top:0;
+        right: -100%;
+        opacity: 0;
+        max-width: 400px;
+        padding: 88px 50px;
+        transition: .3s linear;
+    }
+    .navbar-menu a{
+        display: block;
+        font-size: 30px;
+    }
+    
+    .menu-toggler{
+        transition: 1s linear;
+        display: block;
+    }
+    .sticky .navbar-menu{
+       background: #f1f1f1; 
+    }
+   .navbar-menu.nav-active{
+       opacity: 1;
+        right: 0%;
+    }
+    .menu-toggler span{
+        opacity: 1;
+    }
+    .navbar-menu:hover{
+      background: black;
+        opacity: 0.95;
+    }
+    .sticky .navbar-menu.nav-active:hover{
+      background: white;
+        opacity: 0.95;
+    }
+    .sticky .navbar-menu.nav-active a:hover{
+      background: black;
+        color: white;
+    }
+    .navbar-menu.nav-active a{
+      opacity: 1;  
+    }
+    .navbar-menu.nav-active a:hover{
+        opacity: 1; 
+        background: white;
+        color:black;
+    }
+    
+    .menu-toggler.nav-active span:nth-child(1){
+        transform:rotateZ(-45deg);
+        top: 4px;
+    }
+    .menu-toggler.nav-active span:nth-child(2){
+        opacity: 0;
+        bottom:5px;   
+    }
+    .menu-toggler.nav-active span:nth-child(3){
+        transform:rotate(45deg);
+        bottom: 14px;
+    }
+    .fullopacity{
+        opacity: 1;
+    }
+    .text-box {
+     left:100px;
+    }
+    
 }

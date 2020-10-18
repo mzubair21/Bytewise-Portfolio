@@ -1,8 +1,14 @@
 
 $(document).ready(function(){
 /*active nav*/
-   $('.navbar-menu a').on('click',function(){
+   $('.navbar-menu a').click(function(){
        $(this).addClass('active').siblings().removeClass('active');
+	   if($(window).width()<=980){
+	   $(this).parent('.navbar-menu').removeClass('nav-active');
+	   $('.menu-toggler').removeClass('nav-active');
+	   }
+	 
+  
    });
     /*----------active-nav button---*/
 	/* Scroll Effect*/
@@ -61,5 +67,9 @@ $(document).ready(function(){
 		img.css('width','40%');
 		img.css('height','90%');
     });
+	/*$('.usman p').text("hello");
+	$('.usman h2').text("hello");
+	$('.usman h3').text("hello");*/
     
 });
+/*-----------------------*/
