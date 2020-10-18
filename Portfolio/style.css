@@ -102,8 +102,10 @@
     height:100vh;
     min-height: 500px;
     background:url(./images/bg.jpg);
-    background-size:contain;
-    background-attachment: fixed;
+    background-size:cover;
+	background-repeat:no-repeat;
+	background-position: center;
+	
 }
 
 #home .inner-width{
@@ -273,7 +275,7 @@
 #home .buttons a{
     display:inline-block;
     margin: 15px;
-    color: #48dbfb;
+    color: white;
     font-size: 15px;
     font-weight: 500;
     width: 180px;
@@ -284,7 +286,7 @@
 }
 #home .buttons a:hover , #home .buttons a:nth-child(2)
 {
-    background: #48dbfb;
+    background:black;
     color: white;
 }
 .active{
@@ -561,4 +563,125 @@ img{
         visibility: visible;
     }
 }
+.service-container::before{
+	content: "";
+	background: black;
+	width: 100%;
+	height: 5vh;
+	
+}
+.service-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+	background: black;
+    
+}
+.service{
+    border: 1px solid black;
+    min-width: 250px;
+    width: 290px;
+    height: 305px;
+    margin: 10px;
+    transition: 1s;
+	background:#232123;
+	position: relative;
+	padding: 15px;
+	
+}
 
+.ser-img{
+transition: 1s;
+width: 100%;
+height: 30%;
+position: absolute;
+margin-top: 10px;
+left: 0;
+}
+.ser-img img{
+	transition: 1s;
+	animation: none;
+	width: 40%;
+	height: 90%;
+	-webkit-filter: invert(100%);
+	position: absolute;
+}
+.service h1{
+	transition: 1s;
+	height: 15%;
+    padding: 0px 10px 0px 10px;
+    text-align: center;
+	color: white;
+}
+.margin{
+	transition: 1s;
+	margin-top: 110px;
+}
+
+.service h1{
+    padding: 0px 10px 0px 10px;
+    text-align: center;
+	color: white;
+}
+
+.service .content{
+	backface-visibility: hidden;
+}
+.front{
+	transition: 1s;
+	overflow: hidden;
+	height: 43px;
+}
+
+.service p{
+    text-align:center;
+	color: white;
+    margin: 10px;
+    font-size: 14px;
+	transition-delay: 1s;
+}
+.service button{
+	position: absolute;
+    width: 50%;
+    height:33px;
+	background:rgb(204, 99, 12);
+	outline: none;
+	top: 88%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	box-shadow: none;
+	border:2px solid transparent;
+}
+
+.service button:hover{
+    border-color: #b30000; 
+}
+.rotate{
+    transform:rotateY(180deg);
+}
+.underline{
+    height: 1px;
+	width: 100%;
+    background: #b30000;   
+}
+
+.display-none{
+	opacity: 0;
+}
+@keyframes linear-rotate{
+	0%{transform:rotateY(0deg)
+		
+	}
+    50%{transform:rotateY(180deg);}
+    100%{transform:rotateY(0deg)}
+}
+@keyframes line{
+    70%{transform:rotateY(180deg);}
+    100%{transform:rotateY(180deg)}
+}
+.anim{
+	animation: 3s line linear infinite;
+}
+.linear-rotate{
+	animation: 3s linear-rotate linear infinite;
+}
