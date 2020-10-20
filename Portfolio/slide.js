@@ -1,9 +1,14 @@
-
 var arr=document.querySelectorAll('.img');
 var slide = document.querySelector('.team-slide');
-var width=arr[0].clientWidth;
-var counter=1;
-slide.style.transform =  'translateX(' +(-width * counter ) + 'px)';
+var counter=0;
+var width=0;
+
+$(window).on("load",function(){
+	 width= arr[0].clientWidth;
+	slide.style.transform =  'translateX(' +(-width * counter ) + 'px)';
+	autonext();
+});
+
 
 function prev(){
 	addmargin();
@@ -30,7 +35,6 @@ slide.addEventListener('transitionend',()=>{
         slide.style.transform= 'translateX(' +(-width * counter) + 'px)'; 
     }
 	
-	$(document).ready(function(){
 	$('.intro').removeClass('center');
 		if(counter==1){
 	  introduction("Muhammad Usman","CEO of Bytewise");  
@@ -42,7 +46,7 @@ slide.addEventListener('transitionend',()=>{
 	  introduction("Hadi Butt","Front End Developer");  
    }
 		if(counter==4){
-	  introduction("Muhammad Abdullah Khan","Full Stack");  
+	  introduction("Muhammad Abdullah Khan","Full Stack Developer");  
    }
 		if(counter==5){
 	  introduction("Obaid Ahmed Khan","Graphics Designer");  
@@ -52,7 +56,7 @@ slide.addEventListener('transitionend',()=>{
    }
 	
 
-});
+
 });
 function introduction(a,b){
 	$('.intro h2').text(a);
@@ -67,4 +71,4 @@ function autonext(){
 	setTimeout(autonext,3000);
 	next();
 }
-autonext();
+

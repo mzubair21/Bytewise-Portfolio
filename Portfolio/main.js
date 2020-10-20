@@ -67,9 +67,5 @@ $(document).ready(function(){
 		img.css('width','40%');
 		img.css('height','90%');
     });
-	/*$('.usman p').text("hello");
-	$('.usman h2').text("hello");
-	$('.usman h3').text("hello");*/
     
 });
-/*-----------------------*/
